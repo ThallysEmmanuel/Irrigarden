@@ -1,0 +1,14 @@
+// =============================================================================
+// Variables
+// =============================================================================
+
+$container-width:												120rem !default;
+$column-gutter:													.3rem !default;
+$breakpoint:													2900rem !default;
+
+$font-base:								 Arial, Helvetica, sans-serif !default;
+$font-title:									 'Sarina', $font-base !default;
+$font-sub-title:			 				  'Russo One', $font-base !default;
+$color-theme:												  #4677a2 !default;
+$color-titles:												 	 #fff !default;
+$color-light-theme:						   lighten($color-theme, 35%) !default;

@@ -1,0 +1,38 @@
+.pesquisar {
+	background-color: transparent;
+	border: transparent;
+	color: #fff;
+	border-radius: 0;	
+	border-bottom: #d5fcee;
+	&:hover {
+		background-color: transparent;		
+	}
+}
+
+.more {
+	background-color: #535353;
+	color: #ffffff;
+	border-radius: 3px;
+	padding: 10px 15px;
+	&:hover {
+		background-color: #00a66c;
+		text-decoration: none;
+		color: #ffffff;
+	}
+}
+
+.comprar, .details {
+	background-color: #00a66c;
+	color: #ffffff;
+	padding: 5px 10px;
+	border-radius: 5px;
+	&:hover {
+		color: #ffffff;
+		text-decoration: none;
+		background-color: #535353;
+	}
+
+}
+.details {
+	background-color: #7c4260;	
+}

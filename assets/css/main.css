@@ -1,0 +1,768 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  display: inline-block;
+  background-color: transparent;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+a.active, a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  max-width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+button.active, button:hover, button:focus {
+  outline: 0;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+
+.column {
+  float: left;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  min-height: 1px;
+}
+@media (max-width: 2900rem) {
+  .column {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+}
+
+.column-1 {
+  width: 8.33333%;
+}
+
+.column-2 {
+  width: 16.66667%;
+}
+
+.column-3 {
+  width: 25%;
+}
+
+.column-4 {
+  width: 33.33333%;
+}
+
+.column-5 {
+  width: 41.66667%;
+}
+
+.column-6 {
+  width: 50%;
+}
+
+.column-7 {
+  width: 58.33333%;
+}
+
+.column-8 {
+  width: 66.66667%;
+}
+
+.column-9 {
+  width: 75%;
+}
+
+.column-10 {
+  width: 83.33333%;
+}
+
+.column-11 {
+  width: 100%;
+}
+
+.column-12 {
+  width: 100%;
+}
+
+@media (max-width: 2900rem) {
+  .column-1,
+  .column-2,
+  .column-3,
+  .column-4,
+  .column-5,
+  .column-6,
+  .column-7,
+  .column-8,
+  .column-9,
+  .column-10,
+  .column-11,
+  .column-12 {
+    width: 100%;
+  }
+}
+.column-offset-0 {
+  margin-left: 0;
+}
+
+.column-offset-1 {
+  margin-left: 8.33333%;
+}
+
+.column-offset-2 {
+  margin-left: 16.66667%;
+}
+
+.column-offset-3 {
+  margin-left: 25%;
+}
+
+.column-offset-4 {
+  margin-left: 33.33333%;
+}
+
+.column-offset-5 {
+  margin-left: 41.66667%;
+}
+
+.column-offset-6 {
+  margin-left: 50%;
+}
+
+.column-offset-7 {
+  margin-left: 58.33333%;
+}
+
+.column-offset-8 {
+  margin-left: 66.66667%;
+}
+
+.column-offset-9 {
+  margin-left: 75%;
+}
+
+.column-offset-10 {
+  margin-left: 83.33333%;
+}
+
+.column-offset-11 {
+  margin-left: 91.66666667%;
+}
+
+.column-offset-12 {
+  margin-left: 100%;
+}
+
+@media (max-width: 2900rem) {
+  .column-offset-0,
+  .column-offset-1,
+  .column-offset-2,
+  .column-offset-3,
+  .column-offset-4,
+  .column-offset-5,
+  .column-offset-6,
+  .column-offset-7,
+  .column-offset-8,
+  .column-offset-9,
+  .column-offset-10,
+  .column-offset-11,
+  .column-offset-12 {
+    margin-left: 0;
+  }
+}
+.pesquisar {
+  background-color: transparent;
+  border: transparent;
+  color: #fff;
+  border-radius: 0;
+  border-bottom: #d5fcee;
+}
+.pesquisar:hover {
+  background-color: transparent;
+}
+
+.more {
+  background-color: #535353;
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 10px 15px;
+}
+.more:hover {
+  background-color: #00a66c;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.comprar, .details {
+  background-color: #00a66c;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.comprar:hover, .details:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #535353;
+}
+
+.details {
+  background-color: #7c4260;
+}
+
+html, body {
+  height: 100%;
+  /* aqui definimos que o html e o body ter├úo altura de 100% */
+}
+
+.title-pag {
+  font-size: 5.5em;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.linha {
+  border-top: 2px solid #ccc;
+  width: 100%;
+  display: block;
+  margin: 15px 0;
+}
+
+header {
+  background-image: url(/Irrigarden/assets/img/bgheader.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 15% 0;
+  background-attachment: fixed;
+  height: auto;
+  min-height: 90%;
+}
+header .welcome, header .empresa, header .title-empresa {
+  text-align: center;
+  margin: 0 0 15px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 3em;
+}
+header .empresa {
+  font-size: 5.7em;
+}
+
+.navbar-default {
+  background-color: #00a66c;
+  border-color: #00a66c;
+  padding: 20px 0;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.navbar-default .nav li a, .navbar-default .navbar-nav li a {
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.navbar-default .nav .active a, .navbar-default .navbar-nav .active a {
+  color: #303030;
+  background-color: #00a66c;
+}
+.navbar-default .nav .active a:hover, .navbar-default .navbar-nav .active a:hover {
+  background-color: #00a66c;
+}
+.navbar-default .navbar-form .input-group {
+  border-bottom: 1px solid #d5fcee;
+}
+.navbar-default .navbar-form .input-group .form-control {
+  background-color: transparent;
+  border: transparent;
+  color: #fff;
+  border-radius: 0;
+}
+.navbar-default .navbar-form ::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.navbar-default .navbar-form :-moz-placeholder {
+  color: #ffffff;
+}
+.navbar-default .navbar-form ::-moz-placeholder {
+  color: #ffffff;
+}
+.navbar-default .navbar-form :-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.entrada {
+  background-image: url(/Irrigarden/assets/img/paisagismo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 60%;
+  background-position: top;
+  padding: 50px 0;
+}
+.entrada .title {
+  font-size: 5.5em;
+  color: #ffffff;
+  font-weight: 600;
+}
+.entrada .text-section {
+  font-size: 1.5em;
+  color: #ffffff;
+}
+.entrada .box-exemple {
+  border-top: 8px solid #00a66c;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-height: 560px;
+  text-align: center;
+}
+.entrada .box-exemple h3 {
+  font-weight: 600;
+  color: #00a66c;
+}
+.entrada .box-exemple p {
+  font-size: 1.2em;
+}
+
+.service {
+  padding: 90px 0 0;
+  background-color: #7c4260;
+}
+.service .tipo-service {
+  padding-bottom: 70px;
+}
+.service .tipo-service .title-service {
+  color: #ffffff;
+  font-size: 3.6em;
+  font-weight: 600;
+}
+.service .tipo-service ul {
+  padding: 0;
+  margin: 0;
+}
+.service .tipo-service ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.service .tipo-service ul li a {
+  font-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+.service .tipo-service ul li a:hover {
+  color: #00a66c;
+}
+.service .video-service {
+  padding: 140px 0 90px;
+  background-color: #fff;
+}
+.service .video-service h1 {
+  color: #00a66c;
+  font-size: 3.1em;
+  margin: 0;
+  font-weight: 600;
+}
+.service .video-service p {
+  margin: 0;
+  font-size: 3em;
+  color: #303030;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #535353;
+  padding: 20px 0;
+}
+footer p {
+  color: #fff;
+  float: right;
+}
+footer .social {
+  display: block;
+  text-align: right;
+}
+footer .social li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 10px;
+}
+footer .social li a {
+  color: #ffffff;
+  font-size: 1.8em;
+}
+footer .contato-footer li {
+  list-style: none;
+  color: #fff;
+  font-size: 2em;
+}
+footer .contato-footer li a {
+  color: #fff;
+}
+footer .contato-footer li a:hover {
+  color: #00a66c;
+  text-decoration: none;
+}
+
+.banner {
+  background-image: url("/Irrigarden/assets/img/banner-service.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 5% 0;
+}
+
+.conteudo-service, .conteudo-galeria, .conteudo-produtos {
+  padding: 2% 0 0;
+}
+.conteudo-service h2, .conteudo-galeria h2, .conteudo-produtos h2 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.conteudo-service .box-servi, .conteudo-galeria .box-servi, .conteudo-produtos .box-servi {
+  margin-top: 20px;
+  padding: 2% 0;
+}
+.conteudo-service .box-servi h3, .conteudo-galeria .box-servi h3, .conteudo-produtos .box-servi h3 {
+  font-weight: 600;
+  color: #00a66c;
+  margin-top: 0;
+}
+.conteudo-service .box-servi img, .conteudo-galeria .box-servi img, .conteudo-produtos .box-servi img {
+  border-top: 5px solid #00a66c;
+  width: 100%;
+}
+.conteudo-service .box-servi p, .conteudo-galeria .box-servi p, .conteudo-produtos .box-servi p {
+  font-weight: 600;
+}
+.conteudo-service .box-servi ul, .conteudo-galeria .box-servi ul, .conteudo-produtos .box-servi ul {
+  margin: 15px 0 0;
+  padding: 0;
+}
+.conteudo-service .box-servi ul li, .conteudo-galeria .box-servi ul li, .conteudo-produtos .box-servi ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+.conteudo-service .box-servi ul li a, .conteudo-galeria .box-servi ul li a, .conteudo-produtos .box-servi ul li a {
+  color: #00a66c;
+  font-size: 1.5em;
+}
+.conteudo-service .box-servi ul li a:hover, .conteudo-galeria .box-servi ul li a:hover, .conteudo-produtos .box-servi ul li a:hover {
+  color: #555;
+  text-decoration: none;
+}
+.conteudo-service .box-foto, .conteudo-galeria .box-foto, .conteudo-produtos .box-foto {
+  margin: 15px 0;
+}
+.conteudo-service .demo-1, .conteudo-galeria .demo-1, .conteudo-produtos .demo-1 {
+  background-image: url("/Irrigarden/assets/img/demos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 8% 0;
+  margin-top: 50px;
+}
+.conteudo-service .demo-1 h1, .conteudo-galeria .demo-1 h1, .conteudo-produtos .demo-1 h1 {
+  font-size: 4em;
+  font-weight: 600;
+  color: #fff;
+}
+.conteudo-service .demo-1 p, .conteudo-galeria .demo-1 p, .conteudo-produtos .demo-1 p {
+  font-weight: 600;
+  color: #fff;
+  font-size: 2em;
+}
+.conteudo-service .construction, .conteudo-galeria .construction, .conteudo-produtos .construction {
+  background-color: #7c4260;
+  padding: 5% 0;
+}
+.conteudo-service .construction h2, .conteudo-service .construction h3, .conteudo-galeria .construction h2, .conteudo-galeria .construction h3, .conteudo-produtos .construction h2, .conteudo-produtos .construction h3 {
+  color: #fff;
+  font-weight: 600;
+}
+.conteudo-service .construction img, .conteudo-galeria .construction img, .conteudo-produtos .construction img {
+  border-top: 5px solid #00a66c;
+  width: 100%;
+}
+.conteudo-service .construction h3, .conteudo-galeria .construction h3, .conteudo-produtos .construction h3 {
+  margin-top: 0;
+}
+.conteudo-service .construction p, .conteudo-galeria .construction p, .conteudo-produtos .construction p {
+  color: #ccc;
+}
+.conteudo-service .maintenance, .conteudo-galeria .maintenance, .conteudo-produtos .maintenance {
+  background-color: #fff;
+  padding: 5% 0;
+}
+.conteudo-service .maintenance h2, .conteudo-galeria .maintenance h2, .conteudo-produtos .maintenance h2 {
+  color: #000;
+  font-weight: 600;
+}
+.conteudo-service .maintenance img, .conteudo-galeria .maintenance img, .conteudo-produtos .maintenance img {
+  border-top: 5px solid #00a66c;
+  width: 100%;
+}
+.conteudo-service .maintenance h3, .conteudo-galeria .maintenance h3, .conteudo-produtos .maintenance h3 {
+  margin-top: 0;
+  color: #00a66c;
+  font-weight: 600;
+}
+.conteudo-service .maintenance p, .conteudo-galeria .maintenance p, .conteudo-produtos .maintenance p {
+  color: #767676;
+}
+.conteudo-service .box-produto, .conteudo-galeria .box-produto, .conteudo-produtos .box-produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.conteudo-service .box-produto img, .conteudo-galeria .box-produto img, .conteudo-produtos .box-produto img {
+  border-top: 4px solid #00a66c;
+}
+.conteudo-service .box-produto .nome-produto, .conteudo-galeria .box-produto .nome-produto, .conteudo-produtos .box-produto .nome-produto {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+.conteudo-service .box-produto .preco-produto, .conteudo-galeria .box-produto .preco-produto, .conteudo-produtos .box-produto .preco-produto {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+.conteudo-service .box-produto ul, .conteudo-galeria .box-produto ul, .conteudo-produtos .box-produto ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.conteudo-service .box-produto ul li, .conteudo-galeria .box-produto ul li, .conteudo-produtos .box-produto ul li {
+  display: inline-block;
+}

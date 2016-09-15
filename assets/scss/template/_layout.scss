@@ -1,0 +1,373 @@
+
+html, body{
+ height:100%; /* aqui definimos que o html e o body terão altura de 100% */
+}
+
+
+////////////GLOBAL//////////////
+
+	.title-pag {
+		font-size: 5.5em;
+		color: #ffffff;
+		font-weight: 600;
+		text-align: center;
+	}
+
+	.linha {
+		border-top: 2px solid #ccc;
+		width: 100%;
+		display: block;
+		margin: 15px 0;
+	}
+
+///////////////////////////////
+
+
+
+header {
+	background-image: url(/Irrigarden/assets/img/bgheader.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding: 15% 0;
+	background-attachment: fixed;
+	height:	auto;
+	min-height: 90%;
+	
+	
+
+
+	.welcome, .empresa, .title-empresa {
+		text-align: center;
+		margin: 0 0 15px;
+		color: #ffffff;
+		font-weight: 600;
+		font-size: 3em;
+	}
+	.empresa {
+		font-size: 5.7em;
+	}
+
+}
+.navbar-default {
+	background-color: #00a66c;
+	border-color: #00a66c;
+	padding: 20px 0;
+	border-radius: 0;
+	margin-bottom: 0;
+
+
+	.nav, .navbar-nav {
+		li {
+			a {
+				color: #ffffff;
+				font-size: 1.5em;
+				font-weight: 600;
+			}			
+		}
+		.active {
+			a {
+				color: #303030;
+				background-color: #00a66c;				
+			}
+			a:hover {
+				background-color: #00a66c;
+			}
+		}
+	}
+	.navbar-form {
+		.input-group {
+			border-bottom: 1px solid #d5fcee;
+			.form-control {
+				background-color: transparent;
+				border: transparent;				
+				color: #fff;
+				border-radius: 0;
+			}
+		}
+		::-webkit-input-placeholder {
+		   color: #ffffff;				   
+		}
+
+		:-moz-placeholder {
+		   color: #ffffff;
+		}
+
+		::-moz-placeholder {
+		   color: #ffffff;
+		}
+
+		:-ms-input-placeholder {  
+		    color: #ffffff;
+		}
+	}
+
+}
+
+.entrada {
+	background-image: url(/Irrigarden/assets/img/paisagismo.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 60%;	
+	background-position: top;
+	// background-attachment: fixed;
+	padding: 50px 0;
+
+	.title {
+		font-size: 5.5em;
+		color: #ffffff;
+		font-weight: 600;
+	}
+	.text-section {
+		font-size: 1.5em;
+		color: #ffffff;
+	}
+
+	.box-exemple {
+		border-top: 8px solid #00a66c;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		max-height: 560px;
+		text-align: center;
+
+		h3 {
+			font-weight: 600;
+			color: #00a66c;
+		}
+		p {
+			font-size: 	1.2em;
+		}
+
+	}
+}
+.service {
+	padding: 90px 0 0;
+	background-color: #7c4260;
+
+	.tipo-service {
+		padding-bottom: 70px;
+		.title-service {
+			color: #ffffff ;
+			font-size: 3.6em;
+			font-weight: 600;
+
+		}
+
+		ul {
+			padding: 0;
+			margin: 0;
+			li {
+				list-style: none;
+				margin-bottom: 20px;
+				a {
+					font-style: none;
+					text-decoration: none;
+					color: #fff;
+					font-weight: 600;
+					font-size: 1.3em;
+					&:hover {
+						color: #00a66c;
+					}
+
+				}
+			}
+		}
+	}
+	.video-service {
+		padding: 140px 0 90px;
+		background-color: #fff;
+
+		h1 {
+			color: #00a66c;
+			font-size: 3.1em;
+			margin: 0;
+			font-weight: 600;			
+		}
+		p {
+			margin: 0;
+			font-size: 3em;
+			color: #303030;
+			font-weight: 600;
+		}
+	}
+}
+footer {
+	background-color: #535353;
+	padding: 20px 0;
+
+	p {
+		color: #fff;
+		float: right;
+	}
+	.social {
+		display: block;
+		text-align: right;
+
+		li {
+			display: inline-block;
+			list-style: none;
+			margin-left: 10px;
+			a {
+				color: #ffffff;
+				font-size: 1.8em;
+			}
+		}
+	}
+	.contato-footer {
+		li {
+			list-style: none;
+			color: #fff;
+			font-size: 2em;
+			a {
+				color: #fff;
+				&:hover {
+					color: #00a66c;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.banner {
+	background-image: url('/Irrigarden/assets/img/banner-service.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 5% 0;
+
+}
+
+.conteudo-service, .conteudo-galeria, .conteudo-produtos {
+	padding: 2% 0 0;
+	h2 {
+		text-align: center;
+		font-size: 3em;
+		font-weight: 600;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+	.box-servi {
+		margin-top: 20px;
+		padding: 2% 0;
+		h3 {
+			font-weight: 600;
+			color: #00a66c;
+			margin-top: 0;
+		}
+		img {
+			border-top: 5px solid #00a66c;
+			width: 100%;
+		}
+		p {
+			font-weight: 600;
+		}
+		ul {
+			margin: 15px 0 0;
+			padding: 0;
+			li {
+				list-style: none;
+				margin-top: 10px;
+				a {
+					color: #00a66c;
+					font-size: 1.5em;
+					&:hover {
+						color: #555;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+	.box-foto {
+		margin: 15px 0;
+	}
+	.demo-1 {
+		background-image: url('/Irrigarden/assets/img/demos.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: bottom;
+		padding: 8% 0;
+		margin-top: 50px;
+
+		h1 {
+			font-size: 4em;
+			font-weight: 600;
+			color: #fff;			
+		}
+		p {
+			font-weight: 600;
+			color: #fff;
+			font-size: 2em;
+		}
+	}
+	.construction {
+		background-color: #7c4260;
+		padding: 5% 0;
+		h2, h3 {
+			color: #fff;
+			font-weight: 600;
+		}
+
+		img {
+			border-top: 5px solid #00a66c;
+			width: 100%;
+		}
+		h3 {
+			margin-top: 0;
+		}
+		p {
+			color: #ccc;
+		}
+	}
+	.maintenance {
+		background-color: #fff;
+		padding: 5% 0;
+		h2 {
+			color: #000;
+			font-weight: 600;
+		}
+
+		img {
+			border-top: 5px solid #00a66c;
+			width: 100%;
+		}
+		h3 {
+			margin-top: 0;
+			color: #00a66c;
+			font-weight: 600;
+		}
+		p {
+			color: #767676;
+		}
+	}
+
+	.box-produto {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		text-align: center;
+		margin-bottom: 15px;
+
+		img {
+			border-top: 4px solid #00a66c;
+		}
+		.nome-produto{
+			font-size: 1.5em;
+			margin-bottom: 5px;
+		}
+
+		.preco-produto {
+			font-size: 2em;
+			margin-bottom: 5px;
+		}
+		ul {
+			display: block;
+			margin: 0;
+			padding: 0;
+			li  {
+				display: inline-block;
+			}
+		}
+	}
+
+}
